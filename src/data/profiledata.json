@@ -1,0 +1,102 @@
+{
+    "profile": {
+        "name": "Tayathorn",
+        "surname": "Panuwattanawong",
+        "position": "Mobile Developer",
+        "bio": "Experienced developer in mobile application with native and cross platform such as Obj-C, Swift and React Native with some experience in backend development using Node.js. Familiar and comfortable in Scrum team and MVP working environment.",
+        "contact": [
+            {
+                "id": 1,
+                "title": "Date of Birth",
+                "icon": "cake",
+                "text": "5 July 1993"
+            },
+            {
+                "id": 2,
+                "title": "Location",
+                "icon": "location",
+                "text": "Thonburi, BKK, Thailand"
+            },
+            {
+                "id": 3,
+                "title": "Phone",
+                "icon": "phone",
+                "text": "081-902-5356"
+            },
+            {
+                "id": 4,
+                "title": "Email",
+                "icon": "email",
+                "text": "p.tayathorn@gmail.com"
+            },
+            {
+                "id": 5,
+                "title": "Github",
+                "icon": "github",
+                "text": "https://github.com/tayathorn"
+            },
+            {
+                "id": 6,
+                "title": "Medium",
+                "icon": "medium",
+                "text": "https://medium.com/@p.tayathorn"
+            }
+        ],
+        "education": [
+            {
+                "id": 1,
+                "imageName": "kmutt",
+                "school": "King Mongkut University of Technology Thonburi",
+                "degree": "Bachelor's degree",
+                "field": "Computer engineering",
+                "year": "2011 - 2015",
+                "gpa": "3.0"
+            },
+            {
+                "id": 2,
+                "imageName": "sw",
+                "school": "Satriwitthaya School",
+                "degree": "High School",
+                "field": "Science - Math",
+                "year": "2004 - 2010",
+                "gpa": "3.4"
+            }
+        ],
+        "work_history": [
+            {
+                "id": 1,
+                "img": "thinknet",
+                "position": "Senior Software Engineer at THiNKNET Co., Ltd",
+                "range": "February 2018 - March 2018 (a month)",
+                "description": [
+                    "Improved and implemented iOS and android applications using React Native.",
+                    "Collaborated with other team for planning, designing and developing applications architecture for both frontend and backend.",
+                    "Taught basic React Native to other engineering team members.",
+                    "Built iOS applications for beta testing via TestFlight."
+                ]
+            },
+            {
+                "id": 2,
+                "img": "thinknet",
+                "position": "Junior Software Engineer at THiNKNET Co., Ltd",
+                "range": "April 2016 - February 2018 (1y 11m)",
+                "description": [
+                    "Improved and implemented iOS applications using swift language including UI testing (MVC Architecture) for 1 year.",
+                    "Worked with in scrum team for 1 year then changed to MVP environment.",
+                    "Researched, improved and implemented mobile applications with React Native (cross platform, iOS & Android).",
+                    "Worked with other team in Node.js backend development."
+                ]
+            },
+            {
+                "id": 3,
+                "img": "wealthmagik",
+                "position": "Junior Application Developer at Wealth Management System Limited Co., Ltd",
+                "range": "May 2015 - April 2016 (11 months)",
+                "description": [
+                    "Developed and implemented web application using ASP.NET.",
+                    "Designed database relation and work flow."
+                ]
+            }
+        ]
+    }
+}
