@@ -2,15 +2,17 @@
     "portfolio": [
         {
             "id": 1,
-            "name": "mapmagic"
+            "name": "mapmagic",
+            "title": "Mapmagic",
+            "description": "A mobile application for provide map data. Users can create and save their own POI detail.",
+            "tech": ["rn", "node", "mapbox"]
         },
         {
             "id": 2,
-            "name": "jobthai"
-        },
-        {
-            "id": 3,
-            "name": "pinsspace"
+            "name": "jobthai",
+            "title": "JobThai",
+            "description": "A mobile application for job seekers. Users can search and apply the jobs they want.",
+            "tech": ["rn", "node", "firebase", "graphQL"]
         }
     ]
 }
