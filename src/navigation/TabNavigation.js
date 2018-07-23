@@ -5,25 +5,30 @@ import {
 import { createBottomTabNavigator } from 'react-navigation'
 import Icon from 'react-native-vector-icons/FontAwesome'
 
-import ProfileStack from '../navigation/ProfileStack'
-import SettingStack from '../navigation/SettingStack'
+import ProfileStack from './ProfileStack'
+import PortfolioStack from './PortfolioStack'
+import ColorBase from '../constants/ColorBase';
 
 
 export default createBottomTabNavigator({
     Profile: {
         screen: ProfileStack,
         navigationOptions: {
-            tabBarIcon: ({ tintColor, focused }) => (
-                <Icon name="user" size={20} />
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name="user" size={25} color={tintColor} />
             )
         }
     },
-    Setting: {
-        screen: SettingStack,
+    Portfolio: {
+        screen: PortfolioStack,
         navigationOptions: {
-            tabBarIcon: ({ tintColor, focused }) => (
-                <Icon name="cog" size={20} />
+            tabBarIcon: ({ tintColor }) => (
+                <Icon name="book" size={25} color={tintColor} />
             )
         }
     },
+}, {
+    tabBarOptions: {
+        activeTintColor: ColorBase.pink,
+    }
 })

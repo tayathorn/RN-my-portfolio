@@ -31,15 +31,16 @@ const styles = StyleSheet.create({
     },
     textBase: {
         fontFamily: 'Helvetica',
-        marginTop: 10,
         color: ColorBase.darkGray
     },
     name: {
         fontWeight: 'bold',
         fontSize: 18,
+        marginTop: 20,
     },
     position: {
-        fontSize: 16,
+        fontSize: 15,
+        marginTop: 5
     }
 })
 

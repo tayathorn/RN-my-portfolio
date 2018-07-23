@@ -2,16 +2,16 @@ import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 
 import { navigationOptions } from './configStack'
-import Setting from '../screens/Setting'
+import Portfolio from '../screens/Portfolio'
 
-const SettingStack = createStackNavigator({
-    Setting: {
-        screen: Setting,
+const PortfolioStack = createStackNavigator({
+    Portfolio: {
+        screen: Portfolio,
         navigationOptions: {
             ...navigationOptions,
-            title: 'Setting'
+            title: 'Portfolio'
         }
     }
 })
 
-export default SettingStack
+export default PortfolioStack
