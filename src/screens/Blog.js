@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import {
     StyleSheet,
     View,
+    AsyncStorage,
 } from 'react-native'
 
 import axios from 'axios'
 
 import BlogList from '../components/blog/BlogList'
+
+const ASYNC_POST_LIST_KEY = 'POST_LIST'
 
 export default class Blog extends Component {
 
@@ -19,10 +22,25 @@ export default class Blog extends Component {
     }
 
     componentDidMount() {
-        this.fetchData()
+        // this.retrieveData()
+        AsyncStorage.getItem(ASYNC_POST_LIST_KEY)
+        .then((value) => {
+            if (value !== null) {
+                // console.log(value)
+                this.setPostList(JSON.parse(value))
+            } else {
+                this.fetchData()
+            }
+        })
+    }
+
+    saveData = postList => {
+        AsyncStorage.setItem(ASYNC_POST_LIST_KEY, JSON.stringify(postList))
+        this.setPostList(postList)
     }
 
     fetchData = () => {
+        console.log('fetch data')
         axios.get('https://medium.com/@p.tayathorn/latest?format=json')
             .then((response) => {
                 const result = JSON.parse(response.data.replace("])}while(1);</x>", ""))
@@ -58,7 +76,7 @@ export default class Blog extends Component {
             tempPostList.push(postItem)
         })
 
-        this.setPostList(tempPostList)
+        this.saveData(tempPostList)
     }
 
     setPostList = postList => {
