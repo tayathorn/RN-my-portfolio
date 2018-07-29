@@ -28,7 +28,7 @@ const BlogList = (props) => {
         const imgSource = `${service.baseCoverImgURL}/${SCREEN_WIDTH*2}/${COVER_IMG_HEIGHT*2}/${item.imageId}`
         
         return(
-            <TouchableOpacity style={styles.wrapper} activeOpacity={1} onPress={() => this._onPressBlogItem(item.uniqueSlug)} >
+            <TouchableOpacity style={styles.wrapper} onPress={() => this._onPressBlogItem(item.uniqueSlug)} >
                 <Image
                     style={styles.coverImg} 
                     source={{
@@ -45,12 +45,13 @@ const BlogList = (props) => {
 
     _onPressBlogItem = (uniqueSlug) => {
         const mediumScheme = 'medium://@p.tayathorn'
+        const mediumWeb = 'https://medium.com/@p.tayathorn'
 
         const linkingURL = `${mediumScheme}/${uniqueSlug}`
 
         Linking.canOpenURL(linkingURL).then(supported => {
             if (!supported) {
-              console.log('Can\'t handle url: ' + linkingURL);
+                Linking.openURL(`${mediumWeb}/${uniqueSlug}`);
             } else {
               return Linking.openURL(linkingURL);
             }
