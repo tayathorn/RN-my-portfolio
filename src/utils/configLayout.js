@@ -6,6 +6,11 @@ const configLayout = {
     portfolio: {
         backgroundColor: 'white',
         margin: 10,
+    },
+    blog: {
+        backgroundColor: 'white',
+        margin: 10,
+        betweenCell: 5,
     }
 }
 
